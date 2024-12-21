@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload files</title>
+  </head>
+  <body>
+    <form method="post" action="./file.php" enctype="multipart/form-data">
+      <input
+        type="file"
+        name="fileUpload"
+        id="fileUpload"
+        placeholder="upload file"
+      />
+      <br />
+      <button type="submit">Upload</button>
+    </form>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Upload Form</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-5 w-50">
+      <h2 class="text-center">Upload File Form</h2>
+      <form action="./file.php" method="post" enctype="multipart/form-data">
+        <div class="mb-3 d-flex justify-content-center">
+          <label for="fileInput" class="form-label"
+            >Choose a file to upload</label
+          >
+          <input
+            type="file"
+            class="form-control"
+            id="fileInput"
+            name="fileupload"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+      </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

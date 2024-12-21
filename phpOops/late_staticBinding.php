@@ -1,0 +1,13 @@
+<?php
+/*
+late static binding:
+-->
+
+
+*/
+
+
+
+
+
+?>
